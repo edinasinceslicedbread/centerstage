@@ -86,7 +86,7 @@ public class Motor3764 extends LinearOpMode {
             // Mecanum drive is controlled with three axes: drive (front-and-back),
             // strafe (left-and-right), and twist (rotating the whole chassis).
 
-            double gain = 0.3
+            double gain = 0.3;
             double drive  = -1*gamepad1.left_stick_y * gain;  // y is 1 when pull back
             double strafe = gamepad1.left_stick_x * gain;
             double twist  = gamepad1.right_stick_x * gain;
